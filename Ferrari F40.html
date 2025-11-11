@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ferrari</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-top">
+      <div class="contato">
+        <span><strong>Contato</strong></span>
+        <span><i class="fab fa-whatsapp"></i> +55 54 1234-5678</span>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+<div class="navbar-middle">
+  <div class="marca">
+    <div class="slogan">
+      <h1>Rent Rover</h1>
+      <p>Alugue seu sonho</p>
+    </div>
+    <div class="divider"></div>
+    <img class="logo" src="img/Logo.png" alt="Logo">
+  </div>
+
+  <div class="barra-direita">
+<form class="search-box" onsubmit="searchCars(); return false;">
+  <input type="text" id="search" placeholder="Pesquisar...">
+  <button type="submit">🔍</button>
+</form>
+    <a href="Login.html" class="login-icon" title="Entrar ou criar conta">
+      <i class="fas fa-user-circle"></i>
+    </a>
+  </div>
+</div>
+
+
+<ul class="nav-menu">
+  <li><a href="Página inicial.html"><i class="fas fa-home"></i> Página Inicial</a></li>
+  <li><a href="Todos os carros.html"><i class="fas fa-car"></i> Todos os Carros</a></li>
+  <li><a href="Merch (Loja).html"><i class="fas fa-tags"></i> Merchandise</a></li>
+  <li><a href="Sobre nós.html"><i class="fas fa-info-circle"></i> Sobre Nós</a></li>
+</ul>
+  </header>
+
+  <main class="container">
+
+    <article class="place">
+      <h2><em>Ferrari F40</em></h2>
+
+<video width="420" height="236" controls loop
+  style="float: left; margin: 10px 20px 10px 0; border: 3px solid #b30000; border-radius: 6px;">
+  <source src="Vídeos/POV F40 Driving, Drifting - DRIVE N SLIDE (online-video-cutter.com).mp4" type="video/mp4">
+  Seu navegador não suporta vídeo em HTML5.
+</video> 
+
+  <p>A lendária Ferrari F40 não é apenas um carro: <mark>é uma peça viva da história do automobilismo.</mark>
+ Último modelo aprovado pessoalmente por Enzo Ferrari, seu design bruto e aerodinâmico, aliado ao motor V8 twin-turbo de 2.9L e ao chassi de fibra de carbono, criam uma máquina feroz.
+ Sem nenhuma assistência eletrônica, pura potência, puro desafio. Acelerar uma F40 é sentir o pulso do verdadeiro espírito Ferrari.
+  </p>
+
+  <form style="margin-top: 20px;">
+    <label for="plano" style="font-weight: bold; display: block; margin-bottom: 10px;">Escolha o plano de aluguel:</label>
+
+  <select id="plano" name="plano" style="padding: 10px; border-radius: 8px; border: 2px solid #b30000; background-color: #1e1e1e; color: white; width: 100%; max-width: 400px; margin-bottom: 15px;">
+    <option value="5km">5 km — R$ 1.200,00</option>
+    <option value="10km">10 km — R$ 2.500,00</option>
+    <option value="1dia">1 dia completo — R$ 12.000,00</option>
+  </select>
+
+  <a href="Compra bem sucedida.html" class="alugar-btn">Alugar agora</a>
+  </form>
+
+  </article>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="footer-container">
+  
+      <div class="footer-column">
+        <h4>Rent Rover</h4>
+        <p>Alugue seu sonho desde 1945</p>
+      </div>
+  
+   <div class="footer-column">
+    <h4>Links úteis</h4>
+    <ul>
+      <li><a href="Página inicial.html">Página Inicial</a></li>
+      <li><a href="Todos os carros.html">Todos os carros</a></li>
+      <li><a href="Merch (Loja).html">Merchandise</a></li>
+      <li><a href="Sobre nós.html">Sobre nós</a></li>
+    </ul>
+   </div>
+  
+      <div class="footer-column">
+        <h4>Contato</h4>
+        <p>contato@rentrover.com.br</p>
+        <p>+55 (54) 1234-5678</p>
+        <p>Gramado - RS</p>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Siga-nos</h4>
+        <p>
+          <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQwNCe_sdDjMm6TuhW8MW0YFLpjCbRr1LWA&s"><i class="fab fa-instagram"></i> Instagram</a><br>
+          <a href="https://64.media.tumblr.com/9f6565aaef4b8b80101a5ac328dbf66b/tumblr_pg5hk0cyMj1tpj79b_1280.jpg"><i class="fab fa-youtube"></i> YouTube</a>
+        </p>
+      </div>
+  
+    </div>
+  
+    <p style="margin-top: 20px;">© 2025 Rent Rover. Todos os direitos reservados.</p>
+  </footer>
+
+<script>
+  function searchCars() {
+      var input = document.getElementById('search').value.toLowerCase();
+  
+      if (input.includes('corvette')) {
+          window.location.href = 'Corvette.html';
+      } else if (input.includes('ferrari') || input.includes('f40')) {
+          window.location.href = 'Ferrari F40.html';
+      } else if (input.includes('mustang')) {
+          window.location.href = 'Mustang Dark Horse.html';
+      } else if (input.includes('porsche') || input.includes('gt3')) {
+          window.location.href = 'Porsche GT3 rs.html';
+      } else if (
+          input.includes('camiseta') ||
+          input.includes('moletom') ||
+          input.includes('boné') ||
+          input.includes('bone')
+      ) {
+          window.location.href = 'Merch (Loja).html';
+      } else {
+          alert('Nenhum resultado encontrado.');
+      }
+  }
+  </script>
+
+</body>
+</html>
